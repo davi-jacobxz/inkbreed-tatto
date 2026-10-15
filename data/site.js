@@ -16,10 +16,10 @@ export const SITE = {
 };
 
 export const FEATURES = [
-  { title: 'Higiene total', text: 'Material descartável e esterilizado' },
-  { title: 'Artistas especializados', text: 'Cada estilo com quem domina' },
-  { title: 'Atendimento personalizado', text: 'Seu projeto desenhado com você' },
-  { title: 'Ambiente confortável', text: 'Espaço seguro e acolhedor' },
+  { title: 'Higiene total', text: 'Material descartável e esterilizado', icon: 'shield' },
+  { title: 'Artistas especializados', text: 'Cada estilo com quem domina', icon: 'award' },
+  { title: 'Atendimento personalizado', text: 'Seu projeto desenhado com você', icon: 'message' },
+  { title: 'Ambiente confortável', text: 'Espaço seguro e acolhedor', icon: 'heart' },
 ];
 
 // Fotos ficam em /public/img — troque o arquivo ou o caminho aqui
