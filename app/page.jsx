@@ -38,7 +38,17 @@ export default function Home() {
 
         <div className="w">
           <div className="fe">
-            {FEATURES.map((f) => <div key={f.title} className="rv"><b>{f.title}</b><small>{f.text}</small></div>)}
+            {FEATURES.map((f) => (
+              <div key={f.title} className="rv">
+                <span className="fe-icon" aria-hidden="true">
+                  {f.icon === 'shield' && <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></svg>}
+                  {f.icon === 'award' && <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" /><path d="m8.5 12-1 9 4.5-2.5 4.5 2.5-1-9" /><path d="m10 8 1.3 1.3L14.5 6" /></svg>}
+                  {f.icon === 'message' && <svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l1.4-3.2A7.5 7.5 0 1 1 20 11.5Z" /><path d="M8.5 11.5h7M12 8v7" /></svg>}
+                  {f.icon === 'heart' && <svg viewBox="0 0 24 24" fill="none"><path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z" /><path d="M8.5 11.5h7" /></svg>}
+                </span>
+                <b>{f.title}</b><small>{f.text}</small>
+              </div>
+            ))}
           </div>
         </div>
 
